@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_bottom_dialog_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/dialogEditTitleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        tools:text="设置名字" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/dialogEditContentEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bottom_dialog_edit"
+        android:gravity="start"
+        android:padding="15dp"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:inputType="textUri"
+        android:textSize="14sp"
+        android:hint="请输入"
+        android:textColorHint="@color/gray_60"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dialogEditCancelBtn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/selector_normal_gray_button"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:textColor="@color/gray_110"
+            android:layout_weight="1"
+            android:layout_marginEnd="15dp"
+            android:textSize="14sp"
+            android:text="取消"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dialogEditTestBtn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_normal_test_button"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:textColor="@color/white"
+            android:layout_marginEnd="15dp"
+            android:textSize="14sp"
+            android:text="测试"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dialogEditConfirmBtn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:background="@drawable/selector_normal_button"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:text="确定"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
